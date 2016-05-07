@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f44336</color>
+    <color name="colorPrimaryDark">#b71c1c</color>
+    <color name="colorAccent">#d32f2f</color>
+
+    <color name="cart_panel">#aaff0004</color>
+    <color name="color_disable_btn">#b9b9b9</color>
+</resources>

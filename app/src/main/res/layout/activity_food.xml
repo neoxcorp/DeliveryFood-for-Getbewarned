@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/rulesTv"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:text="You need to spend £20 or more to order for delivery"/>
+
+    <FrameLayout
+        android:id="@+id/containerFl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/orderPanelFl"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_gravity="bottom"
+        android:background="@color/cart_panel"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:padding="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_shopping_cart_white_48dp" />
+
+            <TextView
+                android:id="@+id/totalPriceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="£312.60"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/orderBtn"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_margin="8dp"
+            android:background="@drawable/order_btn"
+            android:text="Order"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+</FrameLayout>

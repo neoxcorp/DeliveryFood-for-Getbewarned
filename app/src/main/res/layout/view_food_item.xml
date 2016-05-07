@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/foodTitleTv"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="title category aaaaaaaaaa aaaaaaaaa aaaaaaaaa"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/foodImage"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:background="@android:color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/def" />
+
+        <TextView
+            android:id="@+id/foodDescriptionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="title category aaaaaaaaaa aaaaaaaaaas ssss sss  ssssssssssss  aaaaaaaaa aaaaaaaaa"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+    <TextView
+        android:id="@+id/foodPriceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_gravity="center_vertical|start"
+        android:text="£12.60"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/foodRemoveOneImb"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:scaleType="centerCrop"
+                android:background="@null"
+                android:tint="@android:color/darker_gray"
+                android:src="@drawable/ic_remove_circle_outline_white_48dp"/>
+
+            <TextView
+                android:id="@+id/foodQuantityTv"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="1"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/foodAddOneImb"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:scaleType="centerCrop"
+                android:background="@null"
+                android:tint="@android:color/darker_gray"
+                android:src="@drawable/ic_add_circle_outline_white_48dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addToOrderBtn"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|end"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/add_to_order"
+            android:text="Add to order"/>
+
+    </FrameLayout>
+
+</LinearLayout>
